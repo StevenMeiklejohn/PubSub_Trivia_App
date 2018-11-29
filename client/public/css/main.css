@@ -1,0 +1,171 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.5em;
+  color: #468189;
+}
+
+label::after {
+  content: ':';
+}
+
+html {
+  background: url(imgs/brain.jpg) no-repeat;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  background-position: right -400px top -30px;
+
+}
+
+
+.btn {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(66, 184, 221);
+  outline: none;
+  width: 200px;  height: 4em;
+}
+
+.answerBtn {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(66, 184, 221);
+  outline: none;
+  width: 20%;  height: 4em;
+  margin-right: 3px;
+}
+
+#inputs {
+  display: inline-block;
+  position: absolute;
+  left: 50px;
+}
+
+#question {
+  display: inline-block;
+  position: absolute;
+  top: 430px;
+  left: 50px;
+  width: 50%;
+}
+
+#answer {
+  display: inline-block;
+  position: absolute;
+  top: 520px;
+  left: 50px;
+  width: 50%;
+}
+
+#result {
+  display: inline-block;
+  position: absolute;
+  top: 620px;
+  left: 50px;
+  width: 50%;
+}
+
+.correct {
+  display: inline-block;
+  position: absolute;
+  background-color: #93DA0B;
+  top: 620px;
+  left: 50px;
+  width: 40%;
+  height: 50px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.incorrect {
+  display: inline-block;
+  position: absolute;
+  background-color: #FF3366;
+  top: 620px;
+  left: 50px;
+  width: 40%;
+  height: 50px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+#button {
+  display: inline-block;
+  position: absolute;
+  top: 350px;
+  left: 50px;
+}
+
+
+.category {
+    border: 2px solid #468189;
+    width: 200px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.category select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.category select:focus {
+    outline: none;
+}
+
+
+.difficulty {
+    border: 2px solid #468189;
+    width: 200px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.difficulty select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.difficulty select:focus {
+    outline: none;
+}
+
+
+.type {
+    border: 2px solid #468189;
+    width: 200px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.type select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.type select:focus {
+    outline: none;
+}
