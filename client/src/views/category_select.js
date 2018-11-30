@@ -39,6 +39,7 @@ CategoryView.prototype.setup = function(){
 
   var select = document.createElement('select');
   this.select = select;
+  this.select.id = "categorySelect";
   this.element.appendChild(this.select);
   this.categories.forEach((category) => {
     // console.log(category);

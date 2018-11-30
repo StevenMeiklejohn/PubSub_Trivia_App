@@ -12,7 +12,8 @@ const QuestionView = function(element, resultElement){
 
 QuestionView.prototype.setup = function(){
 
-PubSub.subscribe('Trivia:Questions-loaded', (evt) => {
+PubSub.subscribe('App:Questions-loaded', (evt) => {
+  console.log('Question View subscribe triggered');
   const questionsArray = evt.detail;
   const randomQuestion = questionsArray[Math.floor(Math.random() * questionsArray.length)];
   console.log(randomQuestion);
@@ -29,7 +30,7 @@ PubSub.subscribe('Trivia:Questions-loaded', (evt) => {
 
   this.element.innerHTML = this.question;
 
-  this.resultElement.innerHTML = "";
+  // this.resultElement.innerHTML = "";
 
   PubSub.publish('QuestionView:shuffledAnswerArrayReady', shuffledArray);
 

@@ -23,9 +23,12 @@ html {
   color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  background: rgb(66, 184, 221);
+  background: #FE4C8F;
   outline: none;
-  width: 200px;  height: 4em;
+  width: 420px;  height: 4em;
+  display: inline-block;
+  position: absolute;
+  top: 270px;
 }
 
 .answerBtn {
@@ -34,36 +37,38 @@ html {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   background: rgb(66, 184, 221);
   outline: none;
-  width: 20%;  height: 4em;
-  margin-right: 3px;
+  height: 4em;
+  display: block;
+  margin-top: 100px;
+  flex-grow:1;
 }
 
 #inputs {
+  top: 200px;
   display: inline-block;
   position: absolute;
-  left: 50px;
+  left: 100px;
+  width: 40%;
 }
 
 #question {
   display: inline-block;
   position: absolute;
-  top: 430px;
-  left: 50px;
-  width: 50%;
+  /* top: 200px; */
+
 }
 
 #answer {
-  display: inline-block;
-  position: absolute;
-  top: 520px;
-  left: 50px;
-  width: 50%;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  top: 100px;
 }
 
 #result {
   display: inline-block;
   position: absolute;
-  top: 620px;
+  top: 300px;
   left: 50px;
   width: 50%;
 }
@@ -94,37 +99,59 @@ html {
   border-radius: 4px;
   text-align: center;
   text-decoration: none;
-  
+
 }
 
 #button {
   display: inline-block;
   position: absolute;
-  top: 350px;
-  left: 50px;
+  top: 400px;
+
 }
 
-
-.category {
-    border: 2px solid #468189;
-    width: 200px;
-    border-radius: 3px;
+select {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    background-color: #468189; /* fallback color if gradients are not supported */
+    /* background-image: url(../images/select-arrow.png), -webkit-linear-gradient(top, #E5E5E5, #F4F4F4); /* For Chrome and Safari */
+    /* background-image: url(../images/select-arrow.png), -moz-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Fx (3.6 to 15) */ */
+    /* background-image: url(../images/select-arrow.png), -ms-linear-gradient(top, #E5E5E5, #F4F4F4); /* For pre-releases of IE 10*/ */
+    /* background-image: url(../images/select-arrow.png), -o-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Opera (11.1 to 12.0) */ */
+    /* background-image: url(../images/select-arrow.png), linear-gradient(to bottom, #E5E5E5, #F4F4F4); /* Standard syntax; must be last */ */ */
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    border-radius: 2px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: inherit;
+    margin: 0;
     overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 420px;
 }
 
-.category select {
-    padding: 5px 8px;
-    width: 130%;
-    border: none;
-    box-shadow: none;
-    background: transparent;
-    background-image: none;
-    -webkit-appearance: none;
+
+
+.options {
+  display:none;
+   background-color:: #468189;
 }
 
-.category select:focus {
-    outline: none;
+select:hover {
+   background-color:: #468189;
 }
+
+
 
 
 .difficulty {
