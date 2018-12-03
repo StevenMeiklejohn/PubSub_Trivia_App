@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const resultsDiv = document.createElement('div');
     resultsDiv.id = "results";
+    inputDiv.appendChild(resultsDiv);
     const resultsView = new ResultsView(resultsDiv);
     resultsView.setup();
   // Type Input (unused)
